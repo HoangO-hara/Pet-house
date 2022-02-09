@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang='ja'>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>犬・猫</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon1.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+    <script src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/307140e2a3.js"></script>
+
+
+</head>
+
+<body>
+    <!--header-->
+    <div id="top">
+        <div class="top-logo">
+            <a href="./base.html">
+                <img src="img/logo-removebg-preview (3).png" alt="logo-image">
+            </a>
+        </div>
+        <div class="top-menu">
+            <a class="loginmenu" href="form.html" title="会員登録・ログイン">
+                <i class="far fa-user-circle" style="font-size: 40px;"></i><br>会員登録・ログイン
+            </a>
+            <a class="loginmenu" href="#" title="お気に入り">
+                <i class="fas fa-heart" style="font-size: 40px;"></i><br>お気に入り
+            </a>
+            <a class="loginmenu" href="#" title="メッセージ">
+                <i class="fas fa-comments" style="font-size: 40px;"></i><br>メッセージ
+            </a>
+            <a class="loginmenu" href="#" title="よくある質問">
+                <i class="fas fa-question" style="font-size: 40px;"></i><br>よくある質問
+            </a>
+
+        </div>
+    </div>
+
+    <!--navigation-->
+
+    <div id="nav">
+        <div class="bar-button-left">
+            <a class="bar-home" href="base.html">HOME<br>--Pet House Top--</a>
+
+            <a class="bar-room" id="bar-room-popup" href="#">PET ROOM<br>--犬・猫 検索--</a>
+            <div class="room-popup">
+                <h2 class="h2-popup-room">ワンちゃん・ネコちゃんを探す</h2>
+                <div class="room-container">
+
+                    <div class="dog-type">
+                        <a class="a-dog-type" href="#">
+                            <img class="DOG" src="img/1.jpg" alt="ワンちゃん探し">
+                        </a>
+                    </div>
+                    <div class="cat-type">
+                        <a class="a-cat-type" href="#">
+                            <img class="CAT" src="img/6.jpg" alt="ネコ探し">
+                        </a>
+                    </div>
+                    <button id="close-btn">Close</button>
+                </div>
+            </div>
+            <a class="bar-contact" href="#">お問い合わせ<br>--サイトに対して--</a>
+        </div>
+    </div>
+
+    <!--breadcrumb-->
+    <ul class="breadcrumb">
+        <li><a href="base.html">HOME</a></li>
+        <li><a href="form.html">会員ログイン</a></li>
+        <li>ログイン</li>
+    </ul>
+
+
+    <!--main content-->
+
+    <div id="a1">
+        <h1>※一般（里親希望者）のみ</h1>
+        <h2>アンケート登録・編集</h2>
+        <p>保護活動者（里親募集者）はこのアンケート情報をもとに里親の適正の判断をします<br> なるべく詳細な情報の提供にご協力ください
+        </p>
+    </div>
+
+    <form id="questionnaire" action="#">
+
+        <div id="b1">
+            <div class="cohabit">
+                <p class="l">同居について</p>
+                <dl>
+                    <dt><span class="must">必須</span>同居人の有無</dt>
+                    <dd>
+                        <label><input type="radio" name="housemate" id="housemate1"
+                onclick="document.getElementById('xyz').style.display = 'block';">あり(家族)</label>
+                        <label><input type="radio" name="housemate" id="housemate2"
+                onclick="document.getElementById('xyz').style.display = 'block';">あり(家族以外)</label>
+                        <label><input type="radio" name="housemate" id="housemate3"
+                onclick="document.getElementById('xyz').style.display = 'none';">なし(単身)</label>
+                    </dd>
+
+                    <div id="xyz">
+
+                        <dt><span class="must">必須</span>本人以外の同居人</dt>
+                        <dd>
+                            人数
+                            <select name="number" id="number">
+                <option class="a1" disabled selected>選択してください</option>
+                <option value="1">1人</option>
+                <option value="2">2人</option>
+                <option value="3">3人</option>
+                <option value="4">4人</option>
+                <option value="5">5人</option>
+                <option value="6">6人</option>
+                <option value="7">7人以上</option>
+              </select>
+                        </dd>
+
+
+
+
+
+
+                        <dd id="P">
+                            続柄・関係
+                            <select name="relationship1" id="relationship1">
+                <option class="a1" disabled selected>選択してください</option>
+                <option value="配偶者">配偶者</option>
+                <option value="配偶者">子ども</option>
+                <option value="父">父</option>
+                <option value="母">母</option>
+                <option value="兄弟・姉妹">兄弟・姉妹</option>
+                <option value="祖父">祖父</option>
+                <option value="祖母">祖母</option>
+                <option value="叔父">叔父</option>
+                <option value="叔母">叔母</option>
+                <option value="孫">孫</option>
+                <option value="甥姪">甥姪</option>
+                <option value="その他">その他</option>
+              </select> 年齢
+                            <select name="age" id="age">
+                <option class="a1" disabled selected>選択してください</option>
+                <option value="3歳未満">3歳未満</option>
+                <option value="3歳～6歳未満">3歳～6歳未満</option>
+                <option value="6歳～10歳未満">6歳～10歳未満</option>
+                <option value="10歳～20歳未満">10歳～20歳未満</option>
+                <option value="20歳～30歳未満">20歳～30歳未満</option>
+                <option value="30歳～40歳未満">30歳～40歳未満</option>
+                <option value="40歳～50歳未満">40歳～50歳未満</option>
+                <option value="50歳～60歳未満">50歳～60歳未満</option>
+                <option value="60歳～70歳未満">60歳～70歳未満</option>
+                <option value="70歳～80歳未満">70歳～80歳未満</option>
+                <option value="80歳～90歳未満">80歳～90歳未満</option>
+                <option value="90歳～100歳未満">90歳～100歳未満</option>
+                <option value="100歳以上">100歳以上</option>
+              </select> 歳
+                        </dd>
+
+                    </div>
+
+                    <dt><span class="must">必須</span>家族全員のペット飼育同意</dt>
+                    <dd>
+                        <label><input type="radio" name="accept" id="accept1">あり</label>
+                        <label><input type="radio" name="accept" id="accept2">なし</label>
+                    </dd>
+                    <dt><span class="must">必須</span>アレルギーの有無</dt>
+                    <dd>
+                        <p>※ご本人・または同居している方にアレルギー保有の有無を選択してください</p>
+                        <label><input type="radio" name="allergies" id="allergies1"
+                onclick="document.getElementById('abc').style.display = 'block';">あり</label>
+                        <label><input type="radio" name="allergies" id="allergies2"
+                onclick="document.getElementById('abc').style.display = 'none';">なし</label>
+                    </dd>
+
+                    <div id="abc">
+
+                        <dd>
+                            <div id="input_pluralBox">
+                                <div id="input_plural">
+
+
+                                    続柄・関係
+                                    <select name="relationship2" id="relationship2">
+                    <option class="a1" disabled selected>選択してください</option>
+                    <option value="自分">自分</option>
+                    <option value="配偶者">配偶者</option>
+                    <option value="子ども">子ども</option>
+                    <option value="父">父</option>
+                    <option value="母">母</option>
+                    <option value="兄弟・姉妹">兄弟・姉妹</option>
+                    <option value="祖父">祖父</option>
+                    <option value="祖母">祖母</option>
+                    <option value="叔父">叔父</option>
+                    <option value="叔母">叔母</option>
+                    <option value="孫">孫</option>
+                    <option value="甥姪">甥姪</option>
+                    <option value="その他">その他</option>
+                  </select> アレルギー
+                                    <select name="allergy" id="allergy">
+                    <option class="a1" disabled selected>選択してください</option>
+                    <option value="犬アレルギー">犬アレルギー</option>
+                    <option value="猫アレルギー">猫アレルギー</option>
+                  </select>
+
+
+                                    <input type="button" value="＋選択追加" class="add pluralBtn">
+                                    <input type="button" value="削除" class="del pluralBtn">
+
+                                </div>
+                            </div>
+                        </dd>
+
+                    </div>
+
+                </dl>
+            </div>
+
+            <div class="house">
+                <p class="l">お住まいについて</p>
+                <dl>
+                    <dt><span class="must">必須</span>住居タイプ</dt>
+                    <dd>
+                        【自家】
+                        <label><input type="radio" name="Housing" id="Housing1">戸建て</label>
+                        <label><input type="radio" name="Housing" id="Housing2">マンション</label>
+                        <dd>
+                            【賃貸】
+                            <label><input type="radio" name="Housing" id="Housing3">戸建て</label>
+                            <label><input type="radio" name="Housing" id="Housing4">マンション</label>
+                            <label><input type="radio" name="Housing" id="Housing5">アパート</label>
+                            <label><input type="radio" name="Housing" id="Housing6">社宅・寮・公営住宅</label>
+                            <label><input type="radio" name="Housing" id="Housing7">その他</label>
+                        </dd>
+                        <dt><span class="must">必須</span>ペット飼育の可否</dt>
+                        <dd>
+                            <label><input type="radio" name="reared" id="reared1">可</label>
+                            <label><input type="radio" name="reared" id="reared2">不可</label>
+                        </dd>
+                        <dt><span class="must">必須</span>一年以内の転居・転勤</dt>
+                        <dd>
+                            <label><input type="radio" name="relocation" id="relocation1">なし</label>
+                            <label><input type="radio" name="relocation" id="relocation2">あり</label>
+                        </dd>
+                        <dt><span class="must">必須</span>募集者による自宅訪問の可否</dt>
+                        <dd>
+                            <label><input type="radio" name="visit" id="visit1">可</label>
+                            <label><input type="radio" name="visit" id="visit2">不可</label>
+                            <p>※募集者が飼育環境の確認のため、自宅へ訪問する場合があります。</p>
+                        </dd>
+                </dl>
+            </div>
+
+            <div class="breeding">
+                <p class="l">ペット飼育について</p>
+                <dl>
+                    <dt><span class="must">必須</span>飼育場所</dt>
+                    <dd>
+                        <label><input type="radio" name="place" id="place1">室内</label>
+                        <label><input type="radio" name="place" id="place2">室外</label>
+                    </dd>
+                    <dt><span class="must">必須</span>ペットが単独になる時間</dt>
+                    <dd>
+                        <select name="hours" id="hours">
+              <option value="0">0時間</option>
+              <option value="1">1時間</option>
+              <option value="2">2時間</option>
+              <option value="3">3時間</option>
+              <option value="4">4時間</option>
+              <option value="5">5時間</option>
+              <option value="6">6時間</option>
+              <option value="7">7時間</option>
+              <option value="8">8時間</option>
+              <option value="9">9時間</option>
+              <option value="10">10時間以上</option>
+            </select>
+                    </dd>
+                    <dt><span class="must">必須</span>ペット飼育経験の有無</dt>
+                    <dd>
+                        <label><input type="radio" name="experience" id="experience1">あり</label>
+                        <label><input type="radio" name="experience" id="experience2">なし</label>
+                    </dd>
+                    <dt><span class="must">必須</span>現在のペット飼育状況</dt>
+                    <dd>
+                        <label><input type="checkbox" name="category" id="category1" value="猫">猫</label>
+                        <label><input type="checkbox" name="category" id="category2" value="犬">犬</label>
+                        <label><input type="checkbox" name="category" id="category3" value="小動物">小動物</label>
+                        <label><input type="checkbox" name="category" id="category4" value="鳥">鳥</label>
+                        <label><input type="checkbox" name="category" id="category5" value="爬虫類">爬虫類</label>
+                        <label><input type="checkbox" name="category" id="category6" value="その他">その他</label>
+                        <label><input type="checkbox" name="category" id="category7" value="飼っていない">飼っていない</label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="c1">
+            <div class="d1">
+                <h2>ご入力いただいたアンケート内容は里親募集者(保護活動者)に開示いたします</h2>
+                <h4>個人情報の取り扱いについて</h4>
+            </div>
+
+            <div class="e1">
+                <p>下記の個人情報の取り扱いについてご確認の上、【同意して確認画面へ】ボタンを押してください</p>
+
+
+                <p id="submit_button">
+                    <input type="submit" value="同意して確認画面へ">
+                </p>
+            </div>
+        </div>
+
+    </form>
+
+    <!--footer-->
+    <footer>
+        <div id="footer_nav">
+            <a class="footer-logo" href="./base.html">
+                <img src="img/logo-removebg-preview (3).png" alt="footer-logo-image">
+            </a>
+            <div class="footer-main">
+                <ul>
+                    <h2>サイト案内</h2>
+                    <li><a href="#">TOPページ</a></li>
+                    <li><a href="#">よくある質問</a></li>
+                    <li><a href="#">サイトのお問い合わせ</a></li>
+                </ul>
+                <ul>
+                    <h2>会員</h2>
+                    <li><a href="#">会員ログイン</a></li>
+                    <li><a href="#">会員登録(無料)</a></li>
+                </ul>
+                <ul>
+                    <h2>その他</h2>
+                    <li><a href="#">お気に入り一覧</a></li>
+                    <li><a href="#">メッセージ</a></li>
+                </ul>
+            </div>
+        </div>
+        <small>&copy; copyright</small>
+
+    </footer>
+
+
+</body>
+<script>
+    $(document).on("click", ".add", function() {
+        $(this).parent().clone(true).insertAfter($(this).parent());
+    });
+    $(document).on("click", ".del", function() {
+        var target = $(this).parent();
+        if (target.parent().children().length > 1) {
+            target.remove();
+        }
+    });
+
+    $(function($) {
+        $('#number').change(function() {
+            $('#P').empty();
+            for (var i = 0; i < $(this).val(); i++) {
+                var addForm = $('<p>続柄・関係<select name="relationship" id="relationship1"><option class="a1" disabled selected>選択してください</option><option value="配偶者">配偶者</option><option value="子ども">子ども</option><option value="父">父</option><option value="母">母</option><option value="兄弟・姉妹">兄弟・姉妹</option><option value="祖父">祖父</option><option value="祖母">祖母</option><option value="叔父">叔父</option><option value="叔母">叔母</option><option value="孫">孫</option><option value="甥姪">甥姪</option><option value="その他">その他</option></select>年齢<select name="age" id="age"><option class="a1" disabled selected>選択してください</option><option value="3歳未満">3歳未満</option><option value="3歳～6歳未満">3歳～6歳未満</option><option value="6歳～10歳未満">6歳～10歳未満</option><option value="10歳～20歳未満">10歳～20歳未満</option><option value="20歳～30歳未満">20歳～30歳未満</option><option value="30歳～40歳未満">30歳～40歳未満</option><option value="40歳～50歳未満">40歳～50歳未満</option><option value="50歳～60歳未満">50歳～60歳未満</option><option value="60歳～70歳未満">60歳～70歳未満</option><option value="70歳～80歳未満">70歳～80歳未満</option><option value="80歳～90歳未満">80歳～90歳未満</option><option value="90歳～100歳未満">90歳～100歳未満</option><option value="100歳以上">100歳以上</option></select>歳</p>');
+                $('#P').append(addForm);
+            }
+        });
+    });
+</script>
+
+</html>

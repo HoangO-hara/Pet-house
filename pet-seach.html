@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang='ja'>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>犬・猫</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="/img/favicon1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Library-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  <script src="script/script.js"></script>
+  <script src="https://kit.fontawesome.com/307140e2a3.js"></script>
+
+</head>
+<script>
+  $(document).ready(function () {
+    $("#all").click(function () {
+      $(".checkboxall").prop('checked', $(this).prop('checked'));
+    });
+  });
+</script>
+
+<body>
+  <!--header-->
+  <div id="top">
+    <div class="top-logo">
+      <a href="./base.html">
+        <img src="img/logo-removebg-preview (3).png" alt="logo-image">
+      </a>
+    </div>
+    <div class="top-menu">
+      <a class="loginmenu" href="form.html" title="会員登録・ログイン">
+        <i class="far fa-user-circle" style="font-size: 40px;"></i><br>会員登録・ログイン
+      </a>
+      <a class="loginmenu" href="#" title="お気に入り">
+        <i class="fas fa-heart" style="font-size: 40px;"></i><br>お気に入り
+      </a>
+      <a class="loginmenu" href="#" title="メッセージ">
+        <i class="fas fa-comments" style="font-size: 40px;"></i><br>メッセージ
+      </a>
+      <a class="loginmenu" href="#" title="よくある質問">
+        <i class="fas fa-question" style="font-size: 40px;"></i><br>よくある質問
+      </a>
+
+    </div>
+  </div>
+
+  <!--navigation-->
+  <div id="nav">
+    <div class="bar-button-left">
+      <a class="bar-home" href="base.html">HOME<br>--Pet House Top--</a>
+      <a href="#modal-01" class="bar-room">PET ROOM<br>--犬・猫 検索--</a>
+      <a class="bar-contact" href="#">お問い合わせ<br>--サイトに対して--</a>
+    </div>
+  </div>
+  <!---pankuzu--->
+  <!--breadcrumb-->
+  <ul class="breadcrumb">
+    <li><a href="base.html">HOME</a></li>
+    <li>検索・結果</li>
+  </ul>
+
+
+
+  <!---/header--->
+
+
+  <!---main content--->
+
+  <div class="text-seach">
+    <h1>"柴犬"の検索結果</h1>
+  </div>
+
+
+
+  <!-----main----->
+
+
+  <div class="searching-main">
+    <!-----side----->
+    <div class="searchBox">
+
+      <h2>さらに条件を絞る</h2>
+
+
+      <!---ラジオボックス選択--->
+      <p>性別</p>
+
+      <!-- ラジオボタン選択肢 -->
+      <label>
+        <input type="radio" class="osucheck" name="gender">
+        オス
+      </label>
+
+      <label>
+        <input type="radio" class ="mesucheck" name="gender">
+        メス
+      </label>
+      <br>
+      <br>
+
+
+      <!---ラジオボックス選択--->
+      <p>年齢層</p>
+
+      <!-- ラジオボタン選択肢 -->
+      <label>
+        <input type="radio" name="age">
+        子犬・子猫
+      </label>
+      <br>
+
+      <label>
+        <input type="radio" name="age">
+        成犬・成猫
+      </label>
+      <br>
+
+      <label>
+        <input type="radio" name="age">
+        老犬・老猫
+      </label>
+      <br>
+      <br>
+
+
+      <!--<p>応募可能地域<br>(複数選択可)</p>
+      <div onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
+        <a class="Deployment" style="cursor:pointer;">▼クリックで展開</a>-->
+
+      <!--// 折り畳み展開ポインタ -->
+
+      <!-- 折り畳まれ部分 -->
+
+
+
+      <div class="prefectures">
+        <label for="all"><input type="checkbox" name="checkAll" id="all">全選択</label>
+
+
+        <p id="boxes">
+        <p>北海道地方</p>
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="北海道">北海道
+        </label>
+        <br>
+        <br>
+
+        <p>東北地方</p>
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="青森県">青森県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="岩手県">岩手県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="宮城県">宮城県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="秋田県">秋田県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="山形県">山形県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="福島県">福島県
+        </label>
+        <br>
+        <br>
+
+        <p>関東地方</p>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="茨城県">茨城県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="栃木県">栃木県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="群馬県">群馬県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="埼玉県">埼玉県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="千葉県">千葉県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="東京都">東京都
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="神奈川県">神奈川県
+        </label>
+        <br>
+        <br>
+
+        <p>中部地方</p>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="新潟県">新潟県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="富山県">富山県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="石川県">石川県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="福井県">福井県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="山梨県">山梨県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="長野">長野県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="岐阜県">岐阜県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="静岡県">静岡県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="愛知県">愛知県
+        </label>
+        <br>
+        <br>
+
+        <p>近畿地方</p>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="三重県">三重県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="滋賀県">滋賀県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="京都府">京都府
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="大阪府">大阪府
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="兵庫県">兵庫県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="奈良県">奈良県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="和歌山県">和歌山県
+        </label>
+        <br>
+        <br>
+
+        <p>中国地方</p>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="鳥取県">鳥取県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="島根県">島根県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="岡山県">岡山県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="広島県">広島県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="山口県">山口県
+        </label>
+        <br>
+        <br>
+
+        <p>四国地方</p>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="徳島県">徳島県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="香川県">香川県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="愛媛県">愛媛県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="高知県">高知県
+        </label>
+        <br>
+        <br>
+
+        <p>九州地方</p>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="福岡県">福岡県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="佐賀県">佐賀県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="長崎県">長崎県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="熊本県">熊本県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="大分県">大分県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="宮城県">宮城県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="鹿児島県">鹿児島県
+        </label>
+        <br>
+
+        <label>
+          <input type="checkbox" class="checkboxall" name="genre" value="沖縄県">沖縄県
+        </label>
+        </p>
+
+
+      </div>
+
+
+      <p>掲載状況</p>
+
+      <!-- ラジオボタン選択肢 -->
+      <label>
+        <input type="radio" name="Published" value="only">
+        募集中のみ表示
+      </label>
+      <br>
+
+      <label>
+        <input type="radio" name="Published" value="all" checked>全て表示
+      </label>
+      <!-- 送信ボタン -->
+      <button class="search">この条件で調べる</button><br><br>
+      <button class="reset">条件をリセット</button>
+
+    </div>
+
+    <!--// 折り畳まれ部分 -->
+
+    <!-----side----->
+
+    <div class="main">
+      <div class="flexbox">
+        <h4>全〇〇件中　〇件</h4>
+
+        <div class="button-wrapper">
+
+          <a href="" class="btn btn-border"> ▲新 </a>
+          <a href="" class="btn btn-border"> ▼古 </a>
+        </div>
+
+        <ul id=pets>
+         
+          <div class="flex-item-osu">
+            <li>
+              <a href="">
+                <img src="img/inu.jpg" class="pic" alt="">
+                <h2 class="new">NEW</h2>
+                <div class="details_container">
+                  <details>
+
+                    <summary>
+                      <span class="open">もっと見る</span>
+                      <span class="close">閉じる</span>
+                    </summary>
+                    <div class="details-content">
+                      <p>題名</p>
+                      <p>種類</p>
+                      <p>年齢</p>
+                      <p>性別</p>
+                      <p>所在地</p>
+                      <p>応募可能地域</p>
+                      <p>掲載期間</p>
+                    </div>
+                  </details>
+                </div>
+              </a>
+            </li>
+          </div>
+       
+          
+          
+          <div class="flex-item-mesu">
+            <li>
+              <a href="">
+                <img src="img/inu2.jpg" class="pic" alt="">
+                <h2 class="new">NEW</h2>
+                <div class="details_container">
+                  <details>
+
+                    <summary>
+                      <span class="open">もっと見る</span>
+                      <span class="close">閉じる</span>
+                    </summary>
+                    <div class="details-content">
+                      <p class="title">題名</p>
+                      <p>種類</p>
+                      <p>年齢</p>
+                      <p>性別</p>
+                      <p>所在地</p>
+                      <p>応募可能地域</p>
+                      <p>掲載期間</p>
+                    </div>
+                  </details>
+                </div>
+              </a>
+            </li>
+          </div>
+        
+
+          
+          <div class="flex-item-mesu">
+            <li>
+              <a href="">
+                <img src="img/inu3.jpg" class="pic" alt="">
+                <h2 class="new">NEW</h2>
+                <div class="details_container">
+                  <details>
+
+                    <summary>
+                      <span class="open">もっと見る</span>
+                      <span class="close">閉じる</span>
+                    </summary>
+                    <div class="details-content">
+                      <p class="title">題名</p>
+                      <p>種類</p>
+                      <p>年齢</p>
+                      <p>性別</p>
+                      <p>所在地</p>
+                      <p>応募可能地域</p>
+                      <p>掲載期間</p>
+                    </div>
+                  </details>
+                </div>
+              </a>
+            </li>
+          </div>
+        
+
+          
+          <div class="flex-item-mesu">
+            <li>
+              <a href="">
+                <img src="img/inu4.jpg" class="pic" alt="">
+                <h2 class="new">検討中</h2>
+                <div class="details_container">
+                  <details>
+
+                    <summary>
+                      <span class="open">もっと見る</span>
+                      <span class="close">閉じる</span>
+                    </summary>
+                    <div class="details-content">
+                      <p class="title">題名</p>
+                      <p>種類</p>
+                      <p>年齢</p>
+                      <p>性別</p>
+                      <p>所在地</p>
+                      <p>応募可能地域</p>
+                      <p>掲載期間</p>
+                    </div>
+                  </details>
+                </div>
+              </a>
+            </li>
+          </div>
+        
+
+          <div class="flex-item-osu">
+            
+            <li>
+              <a href="">
+                <img src="img/inu6.jpg" class="pic" alt="">
+                <h2 class="new">トライアル中</h2>
+                <div class="details_container">
+                  <details>
+
+                    <summary>
+                      <span class="open">もっと見る</span>
+                      <span class="close">閉じる</span>
+                    </summary>
+                    <div class="details-content">
+                      <p class="title">題名</p>
+                      <p>種類</p>
+                      <p>年齢</p>
+                      <p>性別</p>
+                      <p>所在地</p>
+                      <p>応募可能地域</p>
+                      <p>掲載期間</p>
+                    </div>
+                  </details>
+                </div>
+              </a>
+            </li>
+            
+          </div>
+
+          <div class="flex-item-mesu">
+            
+            <li>
+              <a href="">
+                <img src="img/inu6.jpg" class="pic" alt="">
+                <h2 class="new">募集終了</h2>
+                <div class="details_container">
+                  <details>
+
+                    <summary>
+                      <span class="open">もっと見る</span>
+                      <span class="close">閉じる</span>
+                    </summary>
+                    <div class="details-content">
+                      <p class="title">題名</p>
+                      <p>種類</p>
+                      <p>年齢</p>
+                      <p>性別</p>
+                      <p>所在地</p>
+                      <p>応募可能地域</p>
+                      <p>掲載期間</p>
+                    </div>
+                  </details>
+                </div>
+              </a>
+            </li>
+         
+          </div>
+
+          <div class="flex-item-osu">
+            
+            <li>
+              <a href="">
+                <img src="img/cat4.jpg" class="pic" alt="">
+                <div class="details_container">
+                  <h2 class="new">里親決定済み</h2>
+                  <details>
+
+                    <summary>
+                      <span class="open">もっと見る</span>
+                      <span class="close">閉じる</span>
+                    </summary>
+                    <div class="details-content">
+                      <p class="title">題名</p>
+                      <p>種類</p>
+                      <p>年齢</p>
+                      <p>性別</p>
+                      <p>所在地</p>
+                      <p>応募可能地域</p>
+                      <p>掲載期間</p>
+                    </div>
+                  </details>
+                </div>
+              </a>
+            </li>
+         
+          </div>
+
+
+        </ul>
+
+      
+      </div>
+    </div>
+  </div>
+
+  <!--PAGE NO-->
+  <div class="pager">
+    <ul class="pagination">
+      <li><a href="">«</a></li>
+      <li><a class="active" href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">4</a></li>
+      <li><a href="">5</a></li>
+      <li><a href="">6</a></li>
+      <li><a href="">7</a></li>
+      <li><a href="">8</a></li>
+      <li><a href="">»</a></li>
+    </ul>
+  </div>
+
+  <!--POPUP-->
+  <div class="box">
+    <a href="#modal-01" class="modal-btn">検索するペットの変更</a>
+    <div class="modal-wrapper" id="modal-01">
+      <a href="#!" class="modal-overlay"></a>
+      <div class="modal-window">
+        <div class="pop-up">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h1>-Search-</h1>
+          <p>検索したい種類を選択してください</p>
+
+          <div class="modal-seach">
+            <div class="accordion">
+              <div class="det1">
+
+                <div class="acd-menu1">犬種で探す
+                </div>
+
+                <div class="acd-content">
+                  <li class="acd-contents1">
+                    <a href="pet-seach.html">
+                      <img src="img/%E9%9B%91%E7%A8%AE%E7%8A%AC.jpg">
+                      <p class="pet-name">雑種</p>
+                    </a>
+                  </li>
+                  <li class="acd-contents1">
+                    <a href="pet-seach.html">
+                      <img src="img/%E6%9F%B4%E7%8A%AC.jpg">
+                      <p class="pet-name">柴犬</p>
+                    </a>
+                  <li class="acd-contents1">
+                    <a href="pet-seach.html">
+                      <img src=img/%E3%83%9D%E3%83%A1%E3%83%A9%E3%83%8B%E3%82%A2%E3%83%B3.jpg>
+                      <p class="pet-name">ポメラニアン</p>
+                    </a>
+                  </li>
+                  <li class="acd-contents1">
+                    <a href="pet-seach.html">
+                      <img src="img/%E3%83%88%E3%82%A4%E3%83%97%E3%83%BC%E3%83%89%E3%83%AB.jpg">
+                      <p class="pet-name">トイプードル</p>
+                    </a>
+                  </li>
+                  <li class="acd-contents1">
+                    <a href="pet-seach.html">
+                      <img src="img/%E3%83%80%E3%83%83%E3%82%AF%E3%82%B9%E3%83%95%E3%83%B3%E3%83%88.jpg">
+                      <p class="pet-name">ダックスフント</p>
+                    </a>
+                  </li>
+                  <li class="acd-contents1">
+                    <a href="pet-seach.html">
+                      <img src="img/%E3%82%B3%E3%83%BC%E3%82%AE%E3%83%BC.jpg">
+                      <p class="pet-name">コーギー</p>
+                    </a>
+                  </li>
+                  <li class="acd-contents1">
+                    <a href="pet-seach.html">
+                      <img src="img/%E3%83%81%E3%83%AF%E3%83%AF.jpg">
+                      <p class="pet-name">チワワ</p>
+                    </a>
+                  </li>
+                  <li class="acd-contents1">
+                    <a href="pet-seach.html">
+                      <img src="img/%E3%81%9D%E3%81%AE%E4%BB%96%E7%8A%AC.jpg">
+                      <p class="pet-name">その他</p>
+                    </a>
+                  </li>
+                </div>
+              </div>
+
+
+              <div class="det2">
+
+                <div class="acd-menu2">猫種で探す
+                </div>
+
+                <div class="acd-content">
+                  <li class="acd-contents2">
+                    <a href="pet-seach.html">
+                      <img src="img/%E9%9B%91%E7%A8%AE%E7%8C%AB.jpg">
+                      <p class="pet-name">雑種</p>
+                    </a>
+                  </li>
+                  <li class="acd-contents2">
+                    <a href="pet-seach.html">
+                      <img
+                        src="img/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88.jpg">
+                      <p class="pet-name">アメリカン<br>ショート</p>
+                    </a>
+                  <li class="acd-contents2">
+                    <a href="pet-seach.html">
+                      <img src="img/%E3%83%9E%E3%83%B3%E3%83%81%E3%82%AB%E3%83%B3.jpg">
+                      <p class="pet-name">マンチカン</p>
+                    </a>
+                  </li>
+                  <li class="acd-contents2">
+                    <a href="pet-seach.html">
+                      <img
+                        src="img/%E3%82%B9%E3%82%B3%E3%83%86%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AB%E3%83%89.jpg">
+                      <p class="pet-name">スコティッシュ<br>フォールド</p>
+                    </a>
+                  </li>
+                  <li class="acd-contents2">
+                    <a href="pet-seach.html">
+                      <img
+                        src="img/%E3%82%A8%E3%82%AD%E3%82%BE%E3%83%81%E3%83%83%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%83%98%E3%82%A2.jpg">
+                      <p class="pet-name">エキゾチック<br>ショートヘア</p>
+                    </a>
+                  </li>
+                  <li class="acd-contents2">
+                    <a href="pet-seach.html">
+                      <img src="img/%E3%83%9F%E3%83%8C%E3%82%A8%E3%83%83%E3%83%88.jpg">
+                      <p class="pet-name">ミヌエット</p>
+                    </a>
+                  </li>
+                  <li class="acd-contents2">
+                    <a href="pet-seach.html">
+                      <img
+                        src="img/%E3%83%96%E3%83%AA%E3%83%86%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%83%98%E3%82%A2.jpg">
+                      <p class="pet-name">ブリティッシュ<br>ショートヘア</p>
+                    </a>
+                  </li>
+                  <li class="acd-contents2">
+                    <a href="pet-seach.html">
+                      <img src="img/%E3%81%9D%E3%81%AE%E4%BB%96%E7%8C%AB.jpg">
+                      <p class="pet-name">その他</p>
+                    </a>
+                  </li>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!---main content--->
+
+
+
+  <!--scroll to top button-->
+
+
+
+
+  <div class="scrolltoTopbtn">
+    <i class="fas fa-angle-up" style="font-size:60px;" title="トップページへ"></i><br>
+
+  </div>
+
+  <!--footer-->
+  <footer>
+    <div id="footer_nav">
+      <a class="footer-logo" href="./base.html">
+        <img src="img/logo-removebg-preview (3).png" alt="footer-logo-image">
+      </a>
+      <div class="footer-main">
+        <ul>
+          <h2>サイト案内</h2>
+          <li><a href="#">TOPページ</a></li>
+          <li><a href="#">よくある質問</a></li>
+          <li><a href="#">サイトのお問い合わせ</a></li>
+        </ul>
+        <ul>
+          <h2>会員</h2>
+          <li><a href="#">会員ログイン</a></li>
+          <li><a href="#">会員登録(無料)</a></li>
+        </ul>
+        <ul>
+          <h2>その他</h2>
+          <li><a href="#">お気に入り一覧</a></li>
+          <li><a href="#">メッセージ</a></li>
+        </ul>
+      </div>
+    </div>
+    <small>&copy; copyright</small>
+
+  </footer>
+
+
+</body>
+<script>
+  $(document).ready(function(){
+    $(".osucheck").click(function(){
+      $(".flex-item-mesu").hide();
+      $(".flex-item-osu").show();
+      
+    });
+  });
+
+  $(document).ready(function(){
+    $(".mesucheck").click(function(){
+      $(".flex-item-osu").hide();
+      $(".flex-item-mesu").show();
+    });
+  });
+
+</script>
+</html>

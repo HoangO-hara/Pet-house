@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang='ja'>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>犬・猫</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon1.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <!--header-->
+    <div id="top">
+        <div class="top-logo">
+            <a href="./base.html">
+                <img src="img/logo-removebg-preview (3).png" alt="logo-image">
+            </a>
+        </div>
+        <div class="top-menu">
+            <a class="loginmenu" href="form.html" title="会員登録・ログイン">
+                <i class="far fa-user-circle" style="font-size: 40px;"></i><br>会員登録・ログイン
+            </a>
+            <a class="loginmenu" href="favorites.html" title="お気に入り">
+                <i class="fas fa-heart" style="font-size: 40px;"></i><br>お気に入り
+            </a>
+            <a class="loginmenu" href="#" title="メッセージ">
+                <i class="fas fa-comments" style="font-size: 40px;"></i><br>メッセージ
+            </a>
+            <a class="loginmenu" href="#" title="よくある質問">
+                <i class="fas fa-question" style="font-size: 40px;"></i><br>よくある質問
+            </a>
+
+        </div>
+    </div>
+
+    <!--navigation-->
+
+    <div id="nav">
+        <div class="bar-button-left">
+            <a class="bar-home" href="base.html">HOME<br>--Pet House Top--</a>
+
+            <a class="bar-room" id="bar-room-popup" href="#modal-01">PET ROOM<br>--犬・猫 検索--</a>
+
+            <a class="bar-contact" href="#">お問い合わせ<br>--サイトに対して--</a>
+        </div>
+    </div>
+
+    <!--PETS DETAIL contents-->
+    <!--breadcrumb-->
+    <ul class="breadcrumb">
+        <li><a href="base.html">HOME</a></li>
+        <li>ペット詳細</li>
+    </ul>
+    <div class="Publication">
+        <p>[]の里親募集詳細</p>
+        <p>募集ID：[]</p>
+        <p>掲載日：[]</p>
+        <p class="Deadline">掲載期限：[]まで</p>
+    </div>
+
+
+    <!--main content-->
+    <div id="main-detail">
+        <section id="title">
+            <h2>[題名]</h2>
+
+
+            <p>♥お気に入り登録者[]人｜閲覧数[]</p>
+        </section>
+
+        <!--写真設定-->
+        <section id="imgGallery">
+            <div class="mein-frame">
+                <img id="main-img" src="img/inu.jpg" alt="メイン写真">
+            </div>
+            <ul class="thumbspace">
+                <li>
+                    <img class="thumbnails" src="img/inu.jpg" data-imagesrc="img/inu.jpg" alt="写真1">
+                </li>
+                <li>
+                    <img class="thumbnails" src="img/shiba2.jpg" data-imagesrc="img/shiba2.jpg" alt="写真2">
+                </li>
+                <li>
+                    <img class="thumbnails" src="img/shiba3.jpg" data-imagesrc="img/shiba3.jpg" alt="写真3">
+                </li>
+                <li>
+                    <img class="thumbnails" src="img/shiba4.jpg" data-imagesrc="img/shiba4.jpg" alt="写真4">
+                </li>
+            </ul>
+
+            <h2>[名前] [(♂／♀)] [年齢]</h2>
+        </section>
+
+        <section id="information">
+            <div class="menu">
+                <label for="menu_bar01">
+                    <h2>基本情報</h2>
+                </label>
+                <input type="checkbox" id="menu_bar01" />
+                <ul id="links01">
+                    <li>
+                        <table>
+                            <tr>
+                                <th>状況</th>
+                                <td>[　募集中　]</td>
+                            </tr>
+                            <tr>
+                                <th>種類</th>
+                                <td>[柴犬]</td>
+                            </tr>
+                            <tr>
+                                <th>サイズ</th>
+                                <td>[中型]</td>
+                            </tr>
+                            <tr>
+                                <th>ペット所在地</th>
+                                <td>[東京]</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <label for="menu_bar02">
+                    <h2>詳細情報</h2>
+                </label>
+                <input type="checkbox" id="menu_bar02" />
+                <ul id="links02">
+                    <li>
+                        <table>
+                            <tr>
+                                <th>ワクチン接種</th>
+                                <td>[接種済み]</td>
+                            </tr>
+                            <tr>
+                                <th>去勢／避妊</th>
+                                <td>[手術済み]</td>
+                            </tr>
+                            <tr>
+                                <th>健康状態</th>
+                                <td>[缶詰などのウェットフードを好みます
+                                    ドライフードの場合は噛み切れずに喉をつまらせてしまいます
+
+                                    散歩はあまりできません
+                                    時折、ゼイゼイといった呼吸がみられます]</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <label for="menu_bar03">
+                    <h2>その他</h2>
+                </label>
+                <input type="checkbox" id="menu_bar03" />
+                <ul id="links03">
+                    <li>
+                        <table>
+                            <tr>
+                                <th>募集の経緯</th>
+                                <td>[★脱走逃走予防に細心の注意と予防策をとること<br>
+                                    ※受診時などの移送時もキャリーなどに収容<br>
+
+                                    ★避妊去勢手術、狂犬病、その他ワクチン接種、ノミ・ダニ、フィラリア予防、定期的なシャンプーの実施<br>
+                                    ※混合ワクチン、狂犬病予防接種、フィラリア予防実績の有無は不明です。フィラリア陽性の可能性も0では無くあり得ることとなります<br>
+
+                                    <br>
+                                    【掲載者について】
+                                    私は長崎県動物管理所で登録ボランティアとして活動している緒方なな子（大村市在住）と言います。どうぞよろしくお願いいたします。<br>
+
+                                    以下プロフィールより抜粋<br>
+
+                                    ★★【日本中で待っている里親さんと保護犬・保護猫との幸せなご縁をつなぐ活動をしています】<br>
+                                    ★★一人でできることはとっても、小さなこと。<br>
+                                    だけど二人、三人でできることをすれば、それはもっともっと大きくなります。<br>
+
+
+                                    長崎県大村市の管理所で登録ボランティアとして活動しています。<br>
+                                    管理所に収容された犬猫の引き出し、搬送、一時預かり、マッチング等の活動を通して、一人でも多くの方々に保護犬猫の存在を知ってもらうこと、一頭でも多くの幸せなご縁をつなぐことを目標にしています。<br>
+                                    またボランティア仲間も募集しています。現地にて説明なども行っていますのでぜひお問い合わせください。]
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>性格や特徴</th>
+                                <td>[◆特徴◆<br>
+                                    体重18㌔前後<br>
+                                    シニア犬、おとなしい]</td>
+                            </tr>
+                            <tr>
+                                <th>その他備考</th>
+                                <td>[※応募の方に個別でアンケートをお送りします。<br>
+
+                                    【応募をする前にご確認ください】<br>
+                                    ◆60歳以上のかたは、後見人を立ててください。※後見人の方も同様に身分証、誓約書が必要。<br>
+                                    ◆未成年の方の場合は保護者の方からご連絡をお願いします。<br>
+                                    ◆同居家族全員、動物の飼養に関する同意を得た上でご応募をお願いします。<br>
+                                    ◆できるだけお留守番の少ないご家庭が動物にとって望ましいと考えています。<br>
+                                    ※留守番時間が長い場合は、できるだけ時間の少ないご家庭を優先することがあります。<br>
+                                    ◆屋内での飼養環境に細心の注意を払ってください<br>
+                                    ※エアコンなどでの室温管理は必須です]</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <label class="menu_ber04" for="menu_bar04">
+                    <h2>条件・募集可能地域</h2>
+                </label>
+                <input type="checkbox" id="menu_bar04" />
+                <ul id="links04">
+                    <li>
+                        <table>
+                            <tr>
+                                <th>
+                                    <p>・単身者応募</p>
+                                </th>
+                                <td>[可]</td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p>・高齢者応募(６５歳以上)</p>
+                                </th>
+                                <td>[可]</td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p>・先住ペットがいる方</p>
+                                </th>
+                                <td>[]</td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p>・[]頭(匹)の譲渡を希望</p>
+                                </th>
+                                <td>【理由】[]</td>
+                            </tr>
+                            <tr>
+                                <th>募集可能地域</th>
+                                <td>[関東地方]</td>
+                            </tr>
+                            <tr>
+                                <th>引き渡し場所</th>
+                                <td>[東京都]</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <label for="menu_bar05">
+                    <h2>里親募集者情報</h2>
+                </label>
+                <input type="checkbox" id="menu_bar05" />
+                <ul id="links05">
+                    <li>
+                        <table>
+                            <tr>
+                                <th>保護活動者<br>里親募集者名</th>
+                                <td>[]</td>
+                            </tr>
+                            <tr>
+                                <th>会員種別</th>
+                                <td>[]</td>
+                            </tr>
+                            <tr>
+                                <th>団体・法人所在地<br>里親募集者住所</th>
+                                <td>[大原ペットサポートチーム]</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+            <div class="apply">
+                <h2><a href="#">お申し込み</a></h2>
+            </div>
+        </section>
+    </div>
+
+    <div class="back_b">
+        <a class="" href="javascript:history.back()">＜前のページに戻る</a>
+    </div>
+
+
+    <!--POPUP-->
+    <div class="box">
+        <a href="#modal-01" class="modal-btn">検索するペットの変更
+            　 </a>
+        <div class="modal-wrapper" id="modal-01">
+            <a href="#!" class="modal-overlay"></a>
+            <div class="modal-window">
+                <div class="pop-up">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h1>-Search-</h1>
+                    <p>検索したい種類を選択してください</p>
+
+                    <div class="modal-seach">
+                        <div class="accordion">
+                            <div class="det1">
+
+                                <div class="acd-menu1">犬種で探す
+                                </div>
+
+                                <div class="acd-content">
+                                    <li class="acd-contents1">
+                                        <a href="pet-seach.html">
+                                            <img src="img/%E9%9B%91%E7%A8%AE%E7%8A%AC.jpg">
+                                            <p class="pet-name">雑種</p>
+                                        </a>
+                                    </li>
+                                    <li class="acd-contents1">
+                                        <a href="pet-seach.html">
+                                            <img src="img/%E6%9F%B4%E7%8A%AC.jpg">
+                                            <p class="pet-name">柴犬</p>
+                                        </a>
+                                    <li class="acd-contents1">
+                                        <a href="pet-seach.html">
+                                            <img src=img/%E3%83%9D%E3%83%A1%E3%83%A9%E3%83%8B%E3%82%A2%E3%83%B3.jpg>
+                                            <p class="pet-name">ポメラニアン</p>
+                                        </a>
+                                    </li>
+                                    <li class="acd-contents1">
+                                        <a href="pet-seach.html">
+                                            <img src="img/%E3%83%88%E3%82%A4%E3%83%97%E3%83%BC%E3%83%89%E3%83%AB.jpg">
+                                            <p class="pet-name">トイプードル</p>
+                                        </a>
+                                    </li>
+                                    <li class="acd-contents1">
+                                        <a href="pet-seach.html">
+                                            <img
+                                                src="img/%E3%83%80%E3%83%83%E3%82%AF%E3%82%B9%E3%83%95%E3%83%B3%E3%83%88.jpg">
+                                            <p class="pet-name">ダックスフント</p>
+                                        </a>
+                                    </li>
+                                    <li class="acd-contents1">
+                                        <a href="pet-seach.html">
+                                            <img src="img/%E3%82%B3%E3%83%BC%E3%82%AE%E3%83%BC.jpg">
+                                            <p class="pet-name">コーギー</p>
+                                        </a>
+                                    </li>
+                                    <li class="acd-contents1">
+                                        <a href="pet-seach.html">
+                                            <img src="img/%E3%83%81%E3%83%AF%E3%83%AF.jpg">
+                                            <p class="pet-name">チワワ</p>
+                                        </a>
+                                    </li>
+                                    <li class="acd-contents1">
+                                        <a href="pet-seach.html">
+                                            <img src="img/%E3%81%9D%E3%81%AE%E4%BB%96%E7%8A%AC.jpg">
+                                            <p class="pet-name">その他</p>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+
+
+                            <div class="det2">
+
+                                <div class="acd-menu2">猫種で探す
+                                </div>
+
+                                <div class="acd-content">
+                                    <li class="acd-contents2">
+                                        <a href="pet-seach.html">
+                                            <img src="img/%E9%9B%91%E7%A8%AE%E7%8C%AB.jpg">
+                                            <p class="pet-name">雑種</p>
+                                        </a>
+                                    </li>
+                                    <li class="acd-contents2">
+                                        <a href="pet-seach.html">
+                                            <img
+                                                src="img/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88.jpg">
+                                            <p class="pet-name">アメリカン<br>ショート</p>
+                                        </a>
+                                    <li class="acd-contents2">
+                                        <a href="pet-seach.html">
+                                            <img src="img/%E3%83%9E%E3%83%B3%E3%83%81%E3%82%AB%E3%83%B3.jpg">
+                                            <p class="pet-name">マンチカン</p>
+                                        </a>
+                                    </li>
+                                    <li class="acd-contents2">
+                                        <a href="pet-seach.html">
+                                            <img
+                                                src="img/%E3%82%B9%E3%82%B3%E3%83%86%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AB%E3%83%89.jpg">
+                                            <p class="pet-name">スコティッシュ<br>フォールド</p>
+                                        </a>
+                                    </li>
+                                    <li class="acd-contents2">
+                                        <a href="pet-seach.html">
+                                            <img
+                                                src="img/%E3%82%A8%E3%82%AD%E3%82%BE%E3%83%81%E3%83%83%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%83%98%E3%82%A2.jpg">
+                                            <p class="pet-name">エキゾチック<br>ショートヘア</p>
+                                        </a>
+                                    </li>
+                                    <li class="acd-contents2">
+                                        <a href="pet-seach.html">
+                                            <img src="img/%E3%83%9F%E3%83%8C%E3%82%A8%E3%83%83%E3%83%88.jpg">
+                                            <p class="pet-name">ミヌエット</p>
+                                        </a>
+                                    </li>
+                                    <li class="acd-contents2">
+                                        <a href="pet-seach.html">
+                                            <img
+                                                src="img/%E3%83%96%E3%83%AA%E3%83%86%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%83%98%E3%82%A2.jpg">
+                                            <p class="pet-name">ブリティッシュ<br>ショートヘア</p>
+                                        </a>
+                                    </li>
+                                    <li class="acd-contents2">
+                                        <a href="pet-seach.html">
+                                            <img src="img/%E3%81%9D%E3%81%AE%E4%BB%96%E7%8C%AB.jpg">
+                                            <p class="pet-name">その他</p>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--scroll to top button-->
+    <div class="scrolltoTopbtn">
+        <i class="fas fa-angle-up" style="font-size:60px;" title="トップページへ"></i><br>
+    </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div id="footer_nav">
+            <a class="footer-logo" href="./base.html">
+                <img src="img/logo-removebg-preview (3).png" alt="footer-logo-image">
+            </a>
+            <div class="footer-main">
+                <ul>
+                    <h2>サイト案内</h2>
+                    <li><a href="#">TOPページ</a></li>
+                    <li><a href="#">よくある質問</a></li>
+                    <li><a href="#">サイトのお問い合わせ</a></li>
+                </ul>
+                <ul>
+                    <h2>会員</h2>
+                    <li><a href="#">会員ログイン</a></li>
+                    <li><a href="#">会員登録(無料)</a></li>
+                </ul>
+                <ul>
+                    <h2>その他</h2>
+                    <li><a href="#">お気に入り一覧</a></li>
+                    <li><a href="#">メッセージ</a></li>
+                </ul>
+            </div>
+        </div>
+        <small>&copy; copyright</small>
+
+    </footer>
+
+</body>
+<!--JavaScript-->
+<script type="text/javascript">
+    var thumbs = document.querySelectorAll('.thumbnails');
+    for (var i = 0; i < thumbs.length; i++) {
+        thumbs[i].onclick = function () {
+            document.getElementById('main-img').src = this.dataset.imagesrc;
+        };
+    }
+</script>
+<!--/JavaScript-->
+
+<!--Library-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+<script src="script/script.js"></script>
+<script src="https://kit.fontawesome.com/307140e2a3.js"></script>
+
+</html>

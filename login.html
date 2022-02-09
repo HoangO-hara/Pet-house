@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='ja'>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>犬・猫</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon1.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+    <script src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/307140e2a3.js"></script>
+
+
+</head>
+
+<body>
+    <!--header-->
+    <div id="top">
+        <div class="top-logo">
+            <a href="./base.html">
+                <img src="img/logo-removebg-preview (3).png" alt="logo-image">
+            </a>
+        </div>
+        <div class="top-menu">
+            <a class="loginmenu" href="form.html" title="会員登録・ログイン">
+                <i class="far fa-user-circle" style="font-size: 40px;"></i><br>会員登録・ログイン
+            </a>
+            <a class="loginmenu" href="#" title="お気に入り">
+                <i class="fas fa-heart" style="font-size: 40px;"></i><br>お気に入り
+            </a>
+            <a class="loginmenu" href="#" title="メッセージ">
+                <i class="fas fa-comments" style="font-size: 40px;"></i><br>メッセージ
+            </a>
+            <a class="loginmenu" href="#" title="よくある質問">
+                <i class="fas fa-question" style="font-size: 40px;"></i><br>よくある質問
+            </a>
+
+        </div>
+    </div>
+
+    <!--navigation-->
+
+    <div id="nav">
+        <div class="bar-button-left">
+            <a class="bar-home" href="base.html">HOME<br>--Pet House Top--</a>
+
+            <a class="bar-room" id="bar-room-popup" href="#modal-01">PET ROOM<br>--犬・猫 検索--</a>
+            <div class="room-popup">
+                <h2 class="h2-popup-room">ワンちゃん・ネコちゃんを探す</h2>
+                <div class="room-container">
+
+                    <div class="dog-type">
+                        <a class="a-dog-type" href="#">
+                            <img class="DOG" src="img/1.jpg" alt="ワンちゃん探し">
+                        </a>
+                    </div>
+                    <div class="cat-type">
+                        <a class="a-cat-type" href="#">
+                            <img class="CAT" src="img/6.jpg" alt="ネコ探し">
+                        </a>
+                    </div>
+                    <button id="close-btn">Close</button>
+                </div>
+            </div>
+            <a class="bar-contact" href="#">お問い合わせ<br>--サイトに対して--</a>
+        </div>
+    </div>
+
+    <!--breadcrumb-->
+    <ul class="breadcrumb">
+        <li><a href="base.html">HOME</a></li>
+        <li><a href="form.html">会員ログイン</a></li>
+        <li>ログイン</li>
+    </ul>
+
+    
+    <!--main content-->
+
+    <div class="login-container">
+        <div class="logintitle">
+            <h1>LOG IN</h1>
+        </div>
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <span class="form">必須</span>
+                    <label for="email">メールアドレス</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="メールアドレスうを入力" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <span>必須</span>
+                    <label for="psw">パスワード</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="psw" name="psw" placeholder="パスワードを入力" pattern="(?=.*[a-z]).{8,}" required>
+                </div>
+
+            </div>
+            <div style="width: 100%; text-align: center;">
+                <input type="submit" id="login" value="ログイン">
+            </div>
+
+
+            <br><a id="forgotpwd" href="forgotpass.html">パスワードをお忘れですか？</a><br>
+            <a id="signup" href="form.html">新規登録！</a>
+
+        </form>
+    </div>
+
+
+
+
+
+    <!--footer-->
+    <footer>
+        <div id="footer_nav">
+            <a class="footer-logo" href="./base.html">
+                <img src="img/logo-removebg-preview (3).png" alt="footer-logo-image">
+            </a>
+            <div class="footer-main">
+                <ul>
+                    <h2>サイト案内</h2>
+                    <li><a href="#">TOPページ</a></li>
+                    <li><a href="#">よくある質問</a></li>
+                    <li><a href="#">サイトのお問い合わせ</a></li>
+                </ul>
+                <ul>
+                    <h2>会員</h2>
+                    <li><a href="#">会員ログイン</a></li>
+                    <li><a href="#">会員登録(無料)</a></li>
+                </ul>
+                <ul>
+                    <h2>その他</h2>
+                    <li><a href="#">お気に入り一覧</a></li>
+                    <li><a href="#">メッセージ</a></li>
+                </ul>
+            </div>
+        </div>
+        <small>&copy; copyright</small>
+
+    </footer>
+
+    <script>
+    </script>
+</body>
+
+</html>

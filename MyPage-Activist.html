@@ -1,0 +1,216 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>犬・猫</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/MyPage-Activist.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon1.png">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/307140e2a3.js"></script>
+  
+  
+</head>
+  <body>
+    <!--header-->
+    <div id="top" >
+      <div class="top-logo">
+          <a href="./base.html">
+              <img src="img/logo-removebg-preview (3).png" alt="logo-image">
+          </a>
+      </div>
+          <div class="top-menu">
+              <!--会員登録済みなので”会員登録・ログイン”部分を”ログアウトに変更する”-->
+                <a class="loginmenu" href="login.html" title="ログアウト">
+                <i class="far fa-user-circle" style="font-size: 40px;"></i><br>ログアウト
+                </a>
+              <a class="loginmenu" href="#" title="お気に入り">
+                  <i class="fas fa-heart" style="font-size: 40px;"></i><br>お気に入り
+              </a>
+              <a class="loginmenu" href="#" title="メッセージ">
+                  <i class="fas fa-comments" style="font-size: 40px;"></i><br>メッセージ
+              </a>
+              <a class="loginmenu" href="#" title="よくある質問">
+                  <i class="fas fa-question" style="font-size: 40px;"></i><br>よくある質問
+              </a>
+         
+          </div>
+  </div> 
+        <!--header-->
+    <!--navigation-->
+        
+    <div id="nav">
+        <div class="bar-button-left">
+                <a class="bar-home" href="base.html">HOME<br>--Pet House Top--</a>
+                
+                 <a class="bar-room" id="bar-room-popup" href="#">PET ROOM<br>--犬・猫 検索--</a>
+                 <div class="room-popup">
+                    <h2 class="h2-popup-room">ワンちゃん・ネコちゃんを探す</h2>
+                 <div class="room-container">
+                     
+                     <div class="dog-type">
+                        <a class="a-dog-type" href="#">
+                            <img class="DOG" src="img/1.jpg" alt="ワンちゃん探し">
+                        </a>
+                     </div>
+                     <div class="cat-type">
+                        <a class="a-cat-type" href="#">
+                            <img class="CAT" src="img/6.jpg" alt="ネコ探し">
+                        </a>
+                     </div>
+                     <button id="close-btn">Close</button>
+                 </div>
+                </div>
+                <a class="bar-contact" href="#">お問い合わせ<br>--サイトに対して--</a>
+        </div>
+    </div>
+
+    <!--breadcrumb-->
+            <ul class="breadcrumb">
+                <li><a href="base.html">HOME</a></li>
+                <li>保護活動者マイページTOP</li>
+              </ul>
+        
+
+        
+    <!--content-->
+<main-content>
+    
+    <!-----side----->
+    <aside>
+    <nav class="sideBox">
+        <div class="menu-title">メニュー</div>
+            <ul>
+                <li><a href="MyPage-Activist.html">マイページTOP</a></li>
+                <li><a href="">登録ペット一覧</a></li>
+                <li><a href="">ペット新規登録</a></li>
+                <li><a href="">里親希望者からの<br>メッセージ</a></li>
+                <li><a href="">プロフィール<br>登録・変更</a></li>
+            </ul>
+    </aside>
+
+    <!--main content-->
+    <div class="MP-main">
+        <h1>～ようこそ〇〇様～</h1>
+        <p class="article">里親希望者とのやり取りや記事の掲載ページ情報に保護活動者様の情報を提供していただきます。</p>
+        <p class="article">以下のリンクからプロ―フィールの登録をお願いいたします。</p>
+        <br>
+            <div class="linkbtn">
+                <a href="">アンケートの登録・変更ページへ向かう</a>
+            </div>
+
+    <br>
+    <br>
+    <br>
+            <p class="article">ご質問・わからないことがございましたら、</p>
+            <p class="article">▼こちらからご確認ください。</p>
+    <br>
+
+            <div class="linkbtn">
+	            <a href="">よくある質問</a>
+            </div>
+
+    <br>
+    <br>
+    <br>
+            <p class="article">他の機能につきましては、左の【メニュー】一覧からご確認ください。</p>
+    <br>
+    <br>
+    <br>
+
+        <h2 class="notice">メッセージ</h2><br>
+            <div>
+                <li><a class="li-msg1" href="">"〇〇"様から返信が来ています</a></li><br>
+                <li><a class="li-msg1" href="">"〇〇"様から返信が来ています</a></li><br>
+                <li><a class="li-msg1" href="">"〇〇"様から返信が来ています</a></li><br>
+            </div>
+    <br>
+            <div class="linkbtn">
+                <a href="">里親希望者からのメッセージ一覧 ページへ向かう</a>
+            </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+
+        <h2 class="notice">希望者からの申請</h2><br>
+            <div>
+                <li><a class="li-msg2" onclick="this.classList.add('active')" href="">"〇〇〇"(題名)のペットに里親希望者から申請が届いています
+                    <span class="MP-badge2">1</span>
+                </a>
+                </li>
+                <br>
+
+                <li><a class="li-msg2" onclick="this.classList.add('active')" href="">"〇〇〇"(題名)のペットに里親希望者から申請が届いています
+                    <span class="MP-badge2">10</span>
+                </a>
+                </li>
+                <br>
+                <li><a class="li-msg2" onclick="this.classList.add('active')" href="">"〇〇〇"(題名)のペットに里親希望者から申請が届いています
+                    <span class="MP-badge2">100</span>
+                </a>
+                </li>
+                <br>
+
+            </div>
+    <br>
+    <br>
+            <div class="linkbtn">
+                <a href="">登録ペット一覧 ページへ向かう</a>
+            </div>
+
+    </div>
+
+</main-content>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <!--scroll to top button-->
+
+    
+    
+    
+    <div class="scrolltoTopbtn">
+      <i class="fas fa-angle-up" style="font-size:60px;" title="トップページへ"></i><br>
+      
+    </div>
+
+
+        <!--footer-->
+        <footer>
+            <div id="footer_nav">
+                <a class="footer-logo" href="./base.html">
+                    <img src="img/logo-removebg-preview (3).png" alt="footer-logo-image">
+                </a>
+                <div class="footer-main">
+                <ul><h2>サイト案内</h2>
+                    <li><a href="#">TOPページ</a></li>
+                    <li><a href="#">よくある質問</a></li>
+                    <li><a href="#">サイトのお問い合わせ</a></li>
+                </ul>
+                <ul><h2>会員</h2>
+                    <li><a href="#">会員ログイン</a></li>
+                    <li><a href="#">会員登録(無料)</a></li>
+                </ul>
+                <ul><h2>その他</h2>
+                    <li><a href="#">お気に入り一覧</a></li>
+                    <li><a href="#">メッセージ</a></li>
+                </ul>
+                </div>
+            </div>
+            <small>&copy; copyright</small>
+            
+        </footer>
+    </body>
+</html>
